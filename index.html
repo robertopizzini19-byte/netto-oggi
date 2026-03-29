@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="google-site-verification" content="gH5CqMs82eLKuGescOi1LnfQATkaVc7i60tKfS4TEYY" />
+<meta name="google-adsense-account" content="ca-pub-4256554994727953">
+<title>NettoOggi — Calcola il tuo stipendio netto 2026</title>
+<meta name="description" content="Calcola il tuo stipendio netto 2026 in pochi secondi. Dipendente pubblico, privato, P.IVA forfettaria: IRPEF, INPS e detrazioni aggiornate alle aliquote 2026."/>
+<link rel="canonical" href="https://nettooggi.netlify.app"/>
+<meta property="og:title" content="NettoOggi — Calcola il tuo stipendio netto 2026"/>
+<meta property="og:description" content="Il calcolatore stipendio netto piu preciso d'Italia. Aggiornato alle aliquote IRPEF 2026 e ai contributi INPS vigenti."/>
+<meta property="og:url" content="https://nettooggi.netlify.app"/>
+<meta property="og:type" content="website"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NettoOggi",
+  "url": "https://nettooggi.netlify.app",
+  "description": "Calcolatore stipendio netto 2026 per dipendenti pubblici, privati e partite IVA forfettarie. Calcolo IRPEF, INPS e detrazioni aggiornato.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "NettoOggi",
+    "url": "https://nettooggi.netlify.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NettoOggi",
+  "url": "https://nettooggi.netlify.app",
+  "description": "NettoOggi elabora i calcoli basandosi sulle aliquote IRPEF 2026 ufficiali, le circolari INPS e i CCNL vigenti. Strumento gratuito di informazione fiscale.",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NettoOggi",
+  "url": "https://nettooggi.netlify.app",
+  "description": "Calcolatore stipendio netto 2026 aggiornato alle aliquote IRPEF e contributi INPS vigenti.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://nettooggi.netlify.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4256554994727953" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0b0e; --bg1:#0f1117; --bg2:#161820; --bg3:#1e2028;
+  --border:#ffffff0f; --border2:#ffffff18; --border3:#ffffff28;
+  --text:#f0f2f8; --muted:#8890a8; --dim:#454c60;
+  --lime:#b8ff57; --lime2:#d4ff8a; --red:#ff5757; --amber:#ffb547; --blue:#57a8ff;
+  --r:10px;
+}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:500px;background:radial-gradient(ellipse,#b8ff5710 0%,transparent 70%);pointer-events:none;z-index:0}
+.page{max-width:560px;margin:0 auto;padding:48px 20px 100px;position:relative;z-index:1}
+
+/* HEADER */
+.logo{display:inline-flex;align-items:center;gap:8px;margin-bottom:32px}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime);animation:blink 2.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.logo-name{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.1em;color:var(--muted)}
+h1{font-size:clamp(36px,8vw,52px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:12px}
+h1 em{font-style:normal;color:var(--lime)}
+.subtitle{font-size:16px;color:var(--muted);line-height:1.5;margin-bottom:48px}
+
+/* STEP PILL */
+.step-pill{display:inline-flex;align-items:center;background:var(--bg2);border:1px solid var(--border2);border-radius:100px;padding:4px;margin-bottom:32px}
+.sp{padding:6px 16px;border-radius:100px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);transition:all .3s}
+.sp.active{background:var(--bg3);color:var(--text)}
+.sp.done{color:var(--lime)}
+
+/* PANELS */
+.panel{display:none}
+.panel.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* TIPO GRID */
+.tipo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}
+.tipo-card{background:var(--bg1);border:1.5px solid var(--border2);border-radius:var(--r);padding:18px 16px;cursor:pointer;transition:all .2s;text-align:left;position:relative}
+.tipo-card:hover{border-color:var(--border3);transform:translateY(-2px)}
+.tipo-card.sel{border-color:var(--lime);background:var(--bg2)}
+.tc-check{position:absolute;top:10px;right:10px;width:16px;height:16px;background:var(--lime);border-radius:50%;display:none;align-items:center;justify-content:center;font-size:9px;color:#000;font-weight:700}
+.tipo-card.sel .tc-check{display:flex}
+.tc-icon{font-size:22px;margin-bottom:8px}
+.tc-name{font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px}
+.tc-sub{font-size:11px;color:var(--muted);line-height:1.4}
+
+/* FORM */
+.form-stack{display:flex;flex-direction:column;gap:20px}
+.field-label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field-hint{font-size:11px;color:var(--dim);margin-top:4px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:420px){.row2{grid-template-columns:1fr}}
+
+/* INPUT MODE SELECTOR */
+.imode-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+@media(max-width:440px){.imode-grid{grid-template-columns:1fr}}
+.imode-btn{background:var(--bg2);border:1.5px solid var(--border2);border-radius:var(--r);padding:12px 10px;cursor:pointer;text-align:left;transition:all .2s;width:100%}
+.imode-btn:hover{border-color:var(--border3)}
+.imode-btn.sel{border-color:var(--lime);background:var(--bg3)}
+.imode-icon{font-size:18px;margin-bottom:5px}
+.imode-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px}
+.imode-sub{font-size:10px;color:var(--dim);line-height:1.3}
+
+/* INPUT PANELS */
+.imode-panel{display:none;margin-top:4px}
+.imode-panel.active{display:block;animation:fadeUp .2s ease}
+
+/* RAL PREVIEW BADGE */
+.ral-preview{display:none;margin-top:6px;padding:10px 14px;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);align-items:center;gap:8px}
+.ral-preview.show{display:flex}
+.ral-preview strong{color:var(--lime)}
+
+/* INPUTS */
+.ral-wrap{position:relative}
+.ral-prefix{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-family:'IBM Plex Mono',monospace;font-size:18px;color:var(--dim);pointer-events:none}
+input.big{width:100%;background:var(--bg2);border:1.5px solid var(--border2);border-radius:var(--r);padding:18px 18px 18px 36px;font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:500;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;-moz-appearance:textfield}
+input.big::-webkit-outer-spin-button,input.big::-webkit-inner-spin-button{-webkit-appearance:none}
+input.big:focus{border-color:var(--lime);box-shadow:0 0 0 3px #b8ff5718}
+input.big.err{border-color:var(--red);box-shadow:0 0 0 3px #ff575718}
+input.sm,select{width:100%;background:var(--bg2);border:1.5px solid var(--border2);border-radius:var(--r);padding:12px 14px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:500;color:var(--text);outline:none;transition:border-color .2s;-moz-appearance:textfield}
+input.sm::-webkit-outer-spin-button,input.sm::-webkit-inner-spin-button{-webkit-appearance:none}
+select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6' fill='none' stroke='%238890a8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+select option{background:var(--bg2)}
+input.sm:focus,select:focus{border-color:var(--lime)}
+
+/* ADVANCED SECTION */
+.adv-toggle{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--bg2);border:1.5px solid var(--border2);border-radius:var(--r);cursor:pointer;transition:border-color .2s}
+.adv-toggle:hover{border-color:var(--border3)}
+.adv-toggle.open{border-bottom-left-radius:0;border-bottom-right-radius:0;border-color:var(--border3)}
+.adv-label{font-size:13px;color:var(--muted);font-weight:500}
+.adv-label span{color:var(--lime);font-size:11px;font-family:'IBM Plex Mono',monospace;margin-left:8px}
+.adv-arrow{color:var(--dim);transition:transform .3s;font-size:11px}
+.adv-toggle.open .adv-arrow{transform:rotate(180deg)}
+.adv-body{display:none;flex-direction:column;gap:16px;background:var(--bg2);border:1.5px solid var(--border3);border-top:none;border-bottom-left-radius:var(--r);border-bottom-right-radius:var(--r);padding:20px 16px}
+.adv-body.open{display:flex}
+.adv-section-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:8px}
+
+/* CHECK ROWS */
+.check-row{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;background:var(--bg1);border:1.5px solid var(--border);border-radius:8px;cursor:pointer;transition:border-color .2s}
+.check-row+.check-row{margin-top:8px}
+.check-row:hover{border-color:var(--border2)}
+.check-row.on{border-color:#b8ff5730}
+.cr-box{width:18px;height:18px;flex-shrink:0;margin-top:1px;border:1.5px solid var(--dim);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;transition:all .2s;color:transparent}
+.check-row.on .cr-box{background:var(--lime);border-color:var(--lime);color:#000}
+.cr-name{font-size:13px;color:var(--text);font-weight:500}
+.cr-sub{font-size:11px;color:var(--dim);margin-top:2px}
+.cr-extra{display:none;margin-top:10px;padding:12px;background:var(--bg);border-radius:8px}
+.cr-extra.open{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:420px){.cr-extra.open{grid-template-columns:1fr}}
+
+/* BUTTONS */
+.btn-calc{width:100%;padding:18px;background:var(--lime);border:none;border-radius:var(--r);font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;color:#000;cursor:pointer;letter-spacing:.01em;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-calc:hover{background:var(--lime2);box-shadow:0 0 32px #b8ff5730}
+.btn-calc:active{transform:scale(.99)}
+.btn-back{background:transparent;border:1.5px solid var(--border2);border-radius:var(--r);padding:11px 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);cursor:pointer;transition:all .2s}
+.btn-back:hover{border-color:var(--border3);color:var(--text)}
+
+/* RESULTS */
+.result-hero{background:var(--bg1);border:1.5px solid var(--border2);border-radius:14px;padding:28px 24px;margin-bottom:16px;position:relative;overflow:hidden}
+.result-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,#b8ff5714 0%,transparent 70%);pointer-events:none}
+.rh-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.rh-amount{font-size:clamp(42px,10vw,64px);font-weight:800;letter-spacing:-.04em;color:var(--lime);line-height:1;margin-bottom:6px}
+.rh-sub{font-size:13px;color:var(--muted)}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+@media(max-width:420px){.result-grid{grid-template-columns:1fr}}
+.rg-card{background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--r);padding:16px}
+.rg-lbl{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+.rg-val{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.rg-sub{font-size:11px;color:var(--dim);margin-top:3px}
+
+/* BAR */
+.bar-card{background:var(--bg1);border:1.5px solid var(--border);border-radius:var(--r);padding:20px;margin-bottom:16px}
+.bar-title{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.bar-track{height:28px;background:var(--bg3);border-radius:6px;overflow:hidden;display:flex;margin-bottom:14px}
+.bs{height:100%;transition:width .8s cubic-bezier(.34,1.4,.64,1)}
+.bar-legend{display:flex;flex-wrap:wrap;gap:10px}
+.bl-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted)}
+.bl-dot{width:7px;height:7px;border-radius:2px;flex-shrink:0}
+
+/* BREAKDOWN */
+.bk-card{background:var(--bg1);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.bk-head{padding:14px 18px 10px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--border)}
+.bk-row{display:flex;justify-content:space-between;align-items:center;padding:11px 18px;border-bottom:1px solid var(--border);transition:background .15s}
+.bk-row:last-child{border-bottom:none}
+.bk-row:hover{background:var(--bg2)}
+.bk-row.sub{background:var(--bg2)}
+.bk-row.final{background:var(--bg3);border-top:1px solid var(--border2)}
+.bk-left{display:flex;align-items:center;gap:8px}
+.bk-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.bk-name{font-size:13px;color:var(--text)}
+.bk-note{font-size:10px;color:var(--dim);font-family:'IBM Plex Mono',monospace;margin-top:1px}
+.bk-right{text-align:right;font-family:'IBM Plex Mono',monospace}
+.bk-val{font-size:13px;font-weight:500}
+.bk-pct{font-size:10px;color:var(--dim);display:block;margin-top:1px}
+.c-neg .bk-val{color:var(--red)}
+.c-pos .bk-val{color:var(--lime)}
+.c-neu .bk-val{color:var(--muted)}
+.bk-row.final .bk-val{font-size:16px;color:var(--lime)}
+
+/* COST CARD */
+.cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;margin-bottom:16px}
+.cost-title{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:12px}
+.cost-row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:4px 0}
+.cost-row span:last-child{font-family:'IBM Plex Mono',monospace}
+.cost-row.hl{color:var(--text);font-weight:600;border-top:1px solid var(--border);margin-top:6px;padding-top:10px}
+
+/* NOTES */
+.notes{padding:16px 18px;background:var(--bg1);border:1px solid var(--border);border-radius:var(--r);font-size:11px;color:var(--dim);line-height:1.7}
+.notes strong{color:var(--muted)}
+.notes ul{padding-left:14px}
+.notes li{margin-bottom:3px}
+
+.result-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.info-note{padding:12px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;font-size:12px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="logo"><div class="logo-dot"></div><span class="logo-name">NETTOOGGI · IT · 2026</span></div>
+  <h1>Scopri il tuo<br><em>stipendio netto</em></h1>
+  <p class="subtitle">Inserisci i tuoi dati e scopri quanto guadagni davvero.</p>
+
+  <!-- STEP PILL -->
+  <div class="step-pill">
+    <div class="sp active" id="sp1">01 Tipo</div>
+    <div class="sp" id="sp2">02 Dati</div>
+    <div class="sp" id="sp3">03 Risultato</div>
+  </div>
+
+  <!-- PANEL 1: TIPO -->
+  <div class="panel active" id="panelTipo">
+    <p style="font-size:14px;color:var(--muted);margin-bottom:16px">Che tipo di lavoratore sei?</p>
+    <div class="tipo-grid">
+      <button class="tipo-card" onclick="selectTipo('priv',this)">
+        <div class="tc-check">✓</div>
+        <div class="tc-icon">🏢</div>
+        <div class="tc-name">Dipendente Privato</div>
+        <div class="tc-sub">Aziende private, CCNL</div>
+      </button>
+      <button class="tipo-card" onclick="selectTipo('pub',this)">
+        <div class="tc-check">✓</div>
+        <div class="tc-icon">🏛️</div>
+        <div class="tc-name">Dipendente Pubblico</div>
+        <div class="tc-sub">PA, scuola, sanità</div>
+      </button>
+      <button class="tipo-card" onclick="selectTipo('forf',this)">
+        <div class="tc-check">✓</div>
+        <div class="tc-icon">📋</div>
+        <div class="tc-name">P.IVA Forfettario</div>
+        <div class="tc-sub">Imposta sostitutiva 15%</div>
+      </button>
+      <button class="tipo-card" onclick="selectTipo('ord',this)">
+        <div class="tc-check">✓</div>
+        <div class="tc-icon">📊</div>
+        <div class="tc-name">P.IVA Ordinario</div>
+        <div class="tc-sub">IRPEF a scaglioni</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- PANEL 2: FORM -->
+  <div class="panel" id="panelForm">
+    <div class="form-stack" id="formFields"></div>
+    <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+      <button class="btn-calc" onclick="calcola()">Calcola il mio netto →</button>
+      <div style="text-align:center">
+        <button class="btn-back" onclick="goTo('panelTipo',1)">← Cambia tipologia</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 3: RESULT -->
+  <div class="panel" id="panelResult">
+    <div id="resultContent"></div>
+    <div class="result-actions">
+      <button class="btn-back" onclick="goTo('panelForm',2)">← Modifica dati</button>
+      <button class="btn-back" onclick="goTo('panelTipo',1)">↺ Ricomincia</button>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+// ── STATE ──────────────────────────────────────────────────────────
+var tipoSel = null;
+var inputMode = 'ral'; // 'ral' | 'mensile' | 'orario'
+
+// ── DATA ───────────────────────────────────────────────────────────
+var COMUNI = {
+  'Milano':0.008,'Roma':0.009,'Napoli':0.008,'Torino':0.008,
+  'Palermo':0.008,'Genova':0.008,'Bologna':0.008,'Firenze':0.008,
+  'Bari':0.008,'Venezia':0.008,'Verona':0.008,'Brescia':0.008,
+  'Padova':0.008,'Catania':0.008,'Trieste':0.008,'Modena':0.008,
+  'Parma':0.008,'Reggio Emilia':0.008,'Perugia':0.008,'Cagliari':0.008,
+  'Trento':0,'Bolzano':0,'Altro':0.008
+};
+var REGIONI = {
+  'Lombardia':0.0173,'Lazio':0.0173,'Campania':0.0203,'Sicilia':0.0173,
+  'Piemonte':0.0173,'Veneto':0.0173,'Toscana':0.0173,'Puglia':0.0203,
+  'Liguria':0.0173,'Emilia-Romagna':0.0173,'Marche':0.0173,'Abruzzo':0.0223,
+  'Calabria':0.0203,'Sardegna':0.0173,'Umbria':0.0173,'Basilicata':0.0173,
+  'Molise':0.0203,'Friuli V.G.':0.0123,'Trentino A.A.':0.0123,"Valle d'Aosta":0.0123
+};
+var ATECO = {
+  'Informatica / IT':0.78,'Professioni tecniche/scientifiche':0.78,
+  'Consulenza / management':0.78,'Comunicazione / media':0.78,
+  'Sanità / assistenza':0.78,'Istruzione / formazione':0.78,
+  'Commercio / distribuzione':0.40,'Artigianato / manifattura':0.67,
+  'Ristorazione / alloggio':0.40,'Agricoltura':0.40,'Altro':0.67
+};
+
+// ── NAVIGATION ─────────────────────────────────────────────────────
+function goTo(panelId, step) {
+  document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('active'); });
+  document.getElementById(panelId).classList.add('active');
+  for (var i=1; i<=3; i++) {
+    var sp = document.getElementById('sp'+i);
+    sp.classList.remove('active','done');
+    if (i === step) sp.classList.add('active');
+    else if (i < step) sp.classList.add('done');
+  }
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function selectTipo(tipo, btn) {
+  document.querySelectorAll('.tipo-card').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+  tipoSel = tipo;
+  buildForm(tipo);
+  goTo('panelForm', 2);
+}
+
+// ── HELPERS ────────────────────────────────────────────────────────
+function el(id) { return document.getElementById(id); }
+function gv(id, def) { var e=el(id); if(!e) return def||0; var v=parseFloat(e.value); return isNaN(v)?(def||0):v; }
+function gs(id, def) { var e=el(id); return e?e.value:(def||''); }
+function isOn(id) { var e=el(id); return e&&e.classList.contains('on'); }
+
+function fmt(n) {
+  return '€\u202f' + Math.round(Math.abs(n)).toLocaleString('it-IT');
+}
+function pct(a,b) { return b ? (a/b*100).toFixed(1)+'%' : '—'; }
+
+function mkOpts(obj, sel) {
+  return Object.keys(obj).map(function(k){
+    return '<option value="'+k+'"'+(k===sel?' selected':'')+'>'+k+'</option>';
+  }).join('');
+}
+
+// ── FORM BUILDER ───────────────────────────────────────────────────
+function buildForm(tipo) {
+  var f = el('formFields');
+  inputMode = 'ral';
+
+  if (tipo === 'priv' || tipo === 'pub') {
+    buildFormDipendente(tipo, f);
+  } else if (tipo === 'forf') {
+    buildFormForf(f);
+  } else if (tipo === 'ord') {
+    buildFormOrd(f);
+  }
+}
+
+function advBlock() {
+  return '<div>' +
+    '<div class="adv-toggle" onclick="toggleAdv(this)">' +
+      '<span class="adv-label">Aggiungi dettagli <span>opzionale</span></span>' +
+      '<span class="adv-arrow">▼</span>' +
+    '</div>' +
+    '<div class="adv-body" id="advBody">' +
+      '<div>' +
+        '<div class="adv-section-label">Situazione familiare</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xConiuge\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div><div class="cr-name">Coniuge / partner a carico</div><div class="cr-sub">Detrazione fino a ~€800/anno</div></div>' +
+        '</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xFigli\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div>' +
+            '<div class="cr-name">Figli a carico</div>' +
+            '<div class="cr-sub">Detrazione per figli over 21 (€950/figlio)</div>' +
+            '<div class="cr-extra" id="xFigli">' +
+              '<div><label class="field-label">Figli under 21</label><input type="number" class="sm" id="fFigliU21" value="0" min="0" max="10"></div>' +
+              '<div><label class="field-label">Figli over 21</label><input type="number" class="sm" id="fFigliO21" value="0" min="0" max="10"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div>' +
+        '<div class="adv-section-label">Benefit &amp; detrazioni</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xMutuo\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div>' +
+            '<div class="cr-name">Mutuo prima casa</div>' +
+            '<div class="cr-sub">19% degli interessi, max €760/anno</div>' +
+            '<div class="cr-extra" id="xMutuo">' +
+              '<div style="grid-column:1/-1"><label class="field-label">Interessi passivi annui (€)</label><input type="number" class="sm" id="fMutuoInt" value="2500" min="0"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xAffitto\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div><div class="cr-name">Affitto come inquilino</div><div class="cr-sub">Detrazione fissa fino a €991/anno</div></div>' +
+        '</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xBuoni\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div>' +
+            '<div class="cr-name">Buoni pasto aziendali</div>' +
+            '<div class="cr-sub">Esentasse fino a €8/giorno</div>' +
+            '<div class="cr-extra" id="xBuoni">' +
+              '<div><label class="field-label">€/giorno</label><input type="number" class="sm" id="fBuoniVal" value="7" min="0" max="15" step="0.5"></div>' +
+              '<div><label class="field-label">Giorni/anno</label><input type="number" class="sm" id="fBuoniGg" value="220" min="0" max="260"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="check-row" onclick="toggleCheck(this,\'xPrevid\')">' +
+          '<div class="cr-box">✓</div>' +
+          '<div>' +
+            '<div class="cr-name">Previdenza complementare</div>' +
+            '<div class="cr-sub">Deducibile fino a €5.164/anno</div>' +
+            '<div class="cr-extra" id="xPrevid">' +
+              '<div style="grid-column:1/-1"><label class="field-label">Versamento annuo (€)</label><input type="number" class="sm" id="fPrevidAnn" value="1000" min="0" max="5165"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+}
+
+function locBlock() {
+  return '<div>' +
+    '<label class="field-label">Comune di residenza</label>' +
+    '<div class="row2">' +
+      '<select id="fComune">'+mkOpts(COMUNI,'Milano')+'</select>' +
+      '<select id="fRegione">'+mkOpts(REGIONI,'Lombardia')+'</select>' +
+    '</div>' +
+  '</div>';
+}
+
+function buildFormDipendente(tipo, f) {
+  var isPub = tipo === 'pub';
+  var placeholder = isPub ? '28000' : '30000';
+  var extraSelect = isPub
+    ? '<select id="fComparto"><option value="gen">PA generale (8,80%)</option><option value="scuola">Scuola</option><option value="sanita">Sanità pubblica</option></select>'
+    : '<select id="fCcnl"><option value="std">Standard (9,19%)</option><option value="dirigente">Dirigente</option></select>';
+  var extraLabel = isPub ? 'Comparto PA' : 'CCNL';
+
+  f.innerHTML =
+    // ── INPUT MODE ──
+    '<div>' +
+      '<label class="field-label">Come conosci il tuo stipendio?</label>' +
+      '<div class="imode-grid">' +
+        '<button type="button" class="imode-btn sel" onclick="setInputMode(\'ral\',this)">' +
+          '<div class="imode-icon">📄</div>' +
+          '<div class="imode-name">Conosco la RAL</div>' +
+          '<div class="imode-sub">Lordo annuo da contratto</div>' +
+        '</button>' +
+        '<button type="button" class="imode-btn" onclick="setInputMode(\'mensile\',this)">' +
+          '<div class="imode-icon">📅</div>' +
+          '<div class="imode-name">So il mensile</div>' +
+          '<div class="imode-sub">Lordo mensile in busta paga</div>' +
+        '</button>' +
+        '<button type="button" class="imode-btn" onclick="setInputMode(\'orario\',this)">' +
+          '<div class="imode-icon">⏱️</div>' +
+          '<div class="imode-name">Pago a ore</div>' +
+          '<div class="imode-sub">Conosco la paga oraria</div>' +
+        '</button>' +
+      '</div>' +
+    '</div>' +
+
+    // ── PANEL RAL ──
+    '<div class="imode-panel active" id="ipRal">' +
+      '<label class="field-label">RAL — Retribuzione Annua Lorda</label>' +
+      '<div class="ral-wrap"><span class="ral-prefix">€</span>' +
+        '<input type="number" class="big" id="fRal" placeholder="'+placeholder+'" min="0" max="999999" step="100">' +
+      '</div>' +
+      '<span class="field-hint">Il lordo annuale che trovi sul tuo contratto o in cima alla busta paga</span>' +
+    '</div>' +
+
+    // ── PANEL MENSILE ──
+    '<div class="imode-panel" id="ipMensile">' +
+      '<label class="field-label">Stipendio mensile lordo (€)</label>' +
+      '<div class="ral-wrap"><span class="ral-prefix">€</span>' +
+        '<input type="number" class="big" id="fMensile" placeholder="1500" min="0" max="99999" step="50" oninput="previewMensile()">' +
+      '</div>' +
+      '<span class="field-hint">Il lordo mensile che vedi in busta paga — non il netto sul conto</span>' +
+      '<div class="ral-preview" id="prevMensile"></div>' +
+    '</div>' +
+
+    // ── PANEL ORARIO ──
+    '<div class="imode-panel" id="ipOrario">' +
+      '<label class="field-label">Paga oraria lorda (€/ora)</label>' +
+      '<div class="ral-wrap"><span class="ral-prefix">€</span>' +
+        '<input type="number" class="big" id="fOrario" placeholder="9.50" min="0" max="999" step="0.10" oninput="previewOrario()">' +
+      '</div>' +
+      '<div class="row2" style="margin-top:12px">' +
+        '<div><label class="field-label">Ore a settimana</label><input type="number" class="sm" id="fOre" value="40" min="1" max="60" oninput="previewOrario()"></div>' +
+        '<div><label class="field-label">Settimane lavorate/anno</label><input type="number" class="sm" id="fSett" value="47" min="1" max="52" oninput="previewOrario()"><span class="field-hint" style="font-size:10px">52 − settimane di ferie</span></div>' +
+      '</div>' +
+      '<div class="ral-preview" id="prevOrario"></div>' +
+    '</div>' +
+
+    // ── COMMON FIELDS ──
+    '<div class="row2">' +
+      '<div><label class="field-label">Mensilità</label>' +
+        '<select id="fMensil"><option value="12">12 mensilità</option><option value="13" selected>13 (+ tredicesima)</option><option value="14">14 (+ quattordicesima)</option></select>' +
+      '</div>' +
+      '<div><label class="field-label">'+extraLabel+'</label>'+extraSelect+'</div>' +
+    '</div>' +
+    locBlock() +
+    advBlock();
+}
+
+function buildFormForf(f) {
+  f.innerHTML =
+    '<div>' +
+      '<label class="field-label">Fatturato annuo (IVA esclusa)</label>' +
+      '<div class="ral-wrap"><span class="ral-prefix">€</span>' +
+        '<input type="number" class="big" id="fRal" placeholder="45000" min="0" max="85000" step="100">' +
+      '</div>' +
+      '<span class="field-hint">Max €85.000 per restare nel forfettario</span>' +
+    '</div>' +
+    '<div class="row2">' +
+      '<div><label class="field-label">Settore / ATECO</label><select id="fAteco">'+mkOpts(ATECO,'Informatica / IT')+'</select></div>' +
+      '<div><label class="field-label">Aliquota</label><select id="fAliq"><option value="0.15">15% — ordinaria</option><option value="0.05">5% — start-up</option></select></div>' +
+    '</div>' +
+    '<div>' +
+      '<label class="field-label">Contributi previdenziali</label>' +
+      '<select id="fCassa" onchange="toggleCassaPerc(\'fCassa\',\'grpCassa\')">' +
+        '<option value="gestSep">Gestione Separata INPS — 26,07%</option>' +
+        '<option value="artigiani">Artigiani / Commercianti — 24%</option>' +
+        '<option value="cassa">Cassa professionale</option>' +
+      '</select>' +
+    '</div>' +
+    '<div id="grpCassa" style="display:none">' +
+      '<label class="field-label">Aliquota cassa (%)</label>' +
+      '<input type="number" class="sm" id="fCassaPerc" value="14.5" min="0" max="30" step="0.5">' +
+    '</div>' +
+    '<div class="info-note">💡 Nel forfettario: nessuna IVA, nessuna addizionale regionale/comunale, nessuna detrazione IRPEF ordinaria.</div>' +
+    advBlock();
+}
+
+function buildFormOrd(f) {
+  f.innerHTML =
+    '<div class="row2">' +
+      '<div><label class="field-label">Ricavi annui (IVA esclusa)</label><div class="ral-wrap"><span class="ral-prefix">€</span><input type="number" class="big" id="fRal" placeholder="80000" min="0" step="500"></div></div>' +
+      '<div><label class="field-label">Costi deducibili</label><div class="ral-wrap"><span class="ral-prefix">€</span><input type="number" class="big" id="fCosti" placeholder="20000" min="0" step="500" style="font-size:22px;padding-top:14px;padding-bottom:14px"></div><span class="field-hint">Affitto, attrezzature, software…</span></div>' +
+    '</div>' +
+    '<div>' +
+      '<label class="field-label">Contributi previdenziali</label>' +
+      '<select id="fCassaOrd" onchange="toggleCassaPerc(\'fCassaOrd\',\'grpCassaOrd\')">' +
+        '<option value="gestSep">Gestione Separata INPS — 26,07%</option>' +
+        '<option value="artigiani">Artigiani / Commercianti — 24%</option>' +
+        '<option value="cassa">Cassa professionale</option>' +
+      '</select>' +
+    '</div>' +
+    '<div id="grpCassaOrd" style="display:none">' +
+      '<label class="field-label">Aliquota cassa (%)</label>' +
+      '<input type="number" class="sm" id="fCassaOrdPerc" value="14.5" min="0" max="30" step="0.5">' +
+    '</div>' +
+    locBlock() +
+    advBlock();
+}
+
+// ── UI TOGGLES ─────────────────────────────────────────────────────
+function setInputMode(mode, btn) {
+  inputMode = mode;
+  document.querySelectorAll('.imode-btn').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+  var panels = {ral:'ipRal', mensile:'ipMensile', orario:'ipOrario'};
+  Object.keys(panels).forEach(function(k){
+    var p = el(panels[k]);
+    if(p) p.classList.toggle('active', k===mode);
+  });
+}
+
+function toggleAdv(toggle) {
+  toggle.classList.toggle('open');
+  el('advBody').classList.toggle('open');
+}
+
+function toggleCheck(row, extraId) {
+  row.classList.toggle('on');
+  var x = el(extraId);
+  if(x) x.classList.toggle('open');
+}
+
+function toggleCassaPerc(selectId, grpId) {
+  var v = gs(selectId);
+  var grp = el(grpId);
+  if(grp) grp.style.display = v==='cassa' ? 'block' : 'none';
+}
+
+// ── LIVE PREVIEWS ──────────────────────────────────────────────────
+function previewMensile() {
+  var mensile = gv('fMensile',0);
+  var mensil = parseInt(gs('fMensil','13'))||13;
+  var ral = mensile * mensil;
+  var prev = el('prevMensile');
+  if(!prev) return;
+  if(ral > 0) {
+    prev.classList.add('show');
+    prev.innerHTML = '↳ RAL equivalente: <strong>'+fmt(ral)+'</strong>/anno';
+  } else {
+    prev.classList.remove('show');
+  }
+}
+
+function previewOrario() {
+  var tariffa = gv('fOrario',0);
+  var ore = gv('fOre',40);
+  var sett = gv('fSett',47);
+  var ral = tariffa * ore * sett;
+  var prev = el('prevOrario');
+  if(!prev) return;
+  if(ral > 0) {
+    prev.classList.add('show');
+    prev.innerHTML = '↳ RAL equivalente: <strong>'+fmt(ral)+'</strong>/anno &nbsp;·&nbsp; '+fmt(ral/12)+'/mese';
+  } else {
+    prev.classList.remove('show');
+  }
+}
+
+// ── GET RAL ────────────────────────────────────────────────────────
+function getRal() {
+  if (tipoSel !== 'priv' && tipoSel !== 'pub') return gv('fRal', 0);
+  if (inputMode === 'mensile') {
+    var mensile = gv('fMensile', 0);
+    var mensil = parseInt(gs('fMensil','13'))||13;
+    return mensile * mensil;
+  }
+  if (inputMode === 'orario') {
+    return gv('fOrario',0) * gv('fOre',40) * gv('fSett',47);
+  }
+  return gv('fRal', 0);
+}
+
+// ── READ BENEFITS ──────────────────────────────────────────────────
+function readBenefits(ral) {
+  var hasConiuge = isOn('xConiuge') || false;
+  var hasFigli   = isOn('xFigli') || false;
+  var hasMutuo   = isOn('xMutuo') || false;
+  var hasAffitto = isOn('xAffitto') || false;
+  var hasBuoni   = isOn('xBuoni') || false;
+  var hasPrevid  = isOn('xPrevid') || false;
+
+  var figliO21 = hasFigli ? gv('fFigliO21',0) : 0;
+  var mutuoInt = hasMutuo ? Math.min(gv('fMutuoInt',2500), 4000) : 0;
+  var buoniVal = hasBuoni ? gv('fBuoniVal',7) : 0;
+  var buoniGg  = hasBuoni ? gv('fBuoniGg',220) : 0;
+  var previdAnn= hasPrevid ? Math.min(gv('fPrevidAnn',1000), 5164.57) : 0;
+
+  return {
+    hasConiuge: hasConiuge,
+    figliO21: figliO21,
+    detrMutuo: mutuoInt * 0.19,
+    detrAffitto: hasAffitto ? (ral < 15493 ? 991.60 : ral < 30987 ? 495.80 : 0) : 0,
+    buoniNetto: Math.min(buoniVal, 8) * buoniGg,
+    hasBuoni: hasBuoni,
+    previdAnn: previdAnn
+  };
+}
+
+// ── FISCAL MATH ────────────────────────────────────────────────────
+function irpefLorda(imp) {
+  if(imp<=0) return {t:0, note:'—'};
+  if(imp<=28000) return {t:imp*0.23, note:'23% × '+fmt(imp)};
+  if(imp<=50000) return {t:28000*0.23+(imp-28000)*0.33, note:'23%×€28k + 33%×'+fmt(imp-28000)};
+  return {t:28000*0.23+22000*0.33+(imp-50000)*0.43, note:'23%×€28k + 33%×€22k + 43%×'+fmt(imp-50000)};
+}
+function detrLD(imp, isPub) {
+  if(imp<=0) return 0;
+  var base = isPub?1880:1955, mid = isPub?1700:1910;
+  if(imp<=15000) return base;
+  if(imp<=28000) return mid + 1190*(28000-imp)/13000;
+  if(imp<=50000) return mid*(50000-imp)/22000;
+  return 0;
+}
+function detrAgg(imp) {
+  if(imp<=20000) return 0;
+  if(imp<=32000) return 1000;
+  if(imp<=40000) return 1000*(40000-imp)/8000;
+  return 0;
+}
+function trattIntegrativo(imp, irpefL, dLD) {
+  if(imp>28000) return 0;
+  if(imp<=15000 && irpefL>dLD) return 1200;
+  if(imp>15000 && dLD>irpefL) return 1200;
+  return 0;
+}
+function detrConiuge(imp) {
+  if(imp<=15000) return 800-690*(imp/15000);
+  if(imp<=40000) return 690+Math.max(0,110*(40000-imp)/25000);
+  if(imp<=80000) return 690*(80000-imp)/40000;
+  return 0;
+}
+
+// ── CALCOLA ────────────────────────────────────────────────────────
+function calcola() {
+  var ral = getRal();
+
+  // Validation
+  if (!ral || ral <= 0) {
+    var errId = (tipoSel==='priv'||tipoSel==='pub')
+      ? (inputMode==='mensile' ? 'fMensile' : inputMode==='orario' ? 'fOrario' : 'fRal')
+      : 'fRal';
+    var inp = el(errId);
+    if(inp){ inp.classList.add('err'); setTimeout(function(){ inp.classList.remove('err'); }, 2000); inp.focus(); }
+    return;
+  }
+
+  var result = null;
+
+  if (tipoSel === 'priv' || tipoSel === 'pub') {
+    result = calcDipendente(ral, tipoSel === 'pub');
+  } else if (tipoSel === 'forf') {
+    result = calcForf(ral);
+  } else if (tipoSel === 'ord') {
+    result = calcOrd(ral);
+  }
+
+  if (!result) return;
+
+  renderResult(result);
+  goTo('panelResult', 3);
+}
+
+function calcDipendente(ral, isPub) {
+  var inpsR = isPub ? 0.088 : 0.0919;
+  var ben = readBenefits(ral);
+  var comune = gs('fComune','Milano');
+  var regione = gs('fRegione','Lombardia');
+  var addRegR = REGIONI[regione] || 0.0173;
+  var addComR = COMUNI[comune] || 0.008;
+  var mensil = parseInt(gs('fMensil','13')) || 13;
+
+  var inpsDip  = ral * inpsR;
+  var imp      = Math.max(0, ral - inpsDip - ben.previdAnn);
+  var irpef    = irpefLorda(imp);
+  var dld      = detrLD(imp, isPub);
+  var dagg     = detrAgg(imp);
+  var ti       = trattIntegrativo(imp, irpef.t, dld);
+  var dconj    = ben.hasConiuge ? detrConiuge(imp) : 0;
+  var dfig     = ben.figliO21 * 950;
+  var totDetr  = dld + dagg + ti + dconj + dfig + ben.detrMutuo + ben.detrAffitto;
+  var irpefN   = Math.max(0, irpef.t - totDetr);
+  var addReg   = imp * addRegR;
+  var addCom   = imp * addComR;
+  var totTrat  = inpsDip + irpefN + addReg + addCom;
+  var netto    = ral - totTrat;
+
+  var rows = [
+    {n:'RAL lordo', dot:'#8890a8', v:ral, cls:'c-neu'},
+    {n:'Contributi INPS ('+(inpsR*100).toFixed(2)+'%)', note:'Quota a tuo carico', dot:'#ffb547', v:-inpsDip, p:pct(inpsDip,ral), cls:'c-neg'},
+  ];
+  if(ben.previdAnn>0) rows.push({n:'Previdenza complementare (deducibile)', dot:'#b8ff57', v:-ben.previdAnn, cls:'c-neg'});
+  rows.push(
+    {n:'Imponibile IRPEF', note:'RAL − INPS − deduzioni', dot:'#454c60', v:imp, cls:'c-neu'},
+    {n:'IRPEF lorda', note:irpef.note, dot:'#ff5757', v:-irpef.t, cls:'c-neg'},
+    {n:'Detrazione lav. dipendente', note:'art. 13 TUIR', dot:'#b8ff57', v:dld, cls:'c-pos'}
+  );
+  if(dagg>0) rows.push({n:'Detrazione aggiuntiva cuneo 2026', dot:'#b8ff57', v:dagg, cls:'c-pos'});
+  if(ti>0)   rows.push({n:'Trattamento integrativo (ex bonus Renzi)', dot:'#b8ff57', v:ti, cls:'c-pos'});
+  if(dconj>0) rows.push({n:'Detrazione coniuge a carico', dot:'#b8ff57', v:dconj, cls:'c-pos'});
+  if(dfig>0)  rows.push({n:'Detrazioni figli over 21 (×'+ben.figliO21+')', dot:'#b8ff57', v:dfig, cls:'c-pos'});
+  if(ben.detrMutuo>0)   rows.push({n:'Detrazione mutuo prima casa', dot:'#b8ff57', v:ben.detrMutuo, cls:'c-pos'});
+  if(ben.detrAffitto>0) rows.push({n:'Detrazione affitto inquilino', dot:'#b8ff57', v:ben.detrAffitto, cls:'c-pos'});
+  rows.push(
+    {n:'IRPEF netta', dot:'#ff5757', v:-irpefN, p:pct(irpefN,ral), cls:'c-neg'},
+    {n:'Add. regionale '+regione+' ('+(addRegR*100).toFixed(2)+'%)', dot:'#57a8ff', v:-addReg, cls:'c-neg'},
+    {n:'Add. comunale '+comune+' ('+(addComR*100).toFixed(2)+'%)', dot:'#57a8ff', v:-addCom, cls:'c-neg'},
+    {n:'Totale trattenute', dot:'#ff5757', v:-totTrat, p:pct(totTrat,ral), cls:'c-neg', sub:true}
+  );
+
+  return {
+    tipo: isPub ? 'Dipendente Pubblico' : 'Dipendente Privato',
+    ral: ral, netto: netto, mensil: mensil,
+    nettoMensile: netto/mensil,
+    totTrat: totTrat,
+    buoniNetto: ben.hasBuoni ? ben.buoniNetto : 0,
+    rows: rows,
+    bar: [
+      {w:netto/ral*100,   color:'#b8ff57', label:'Netto'},
+      {w:irpefN/ral*100,  color:'#ff5757', label:'IRPEF'},
+      {w:inpsDip/ral*100, color:'#ffb547', label:'INPS'},
+      {w:(addReg+addCom)/ral*100, color:'#57a8ff', label:'Addiz.'},
+    ],
+    costoAzienda: ral * (isPub ? 1.33 : 1.3057),
+    tfr: ral / 13.5
+  };
+}
+
+function calcForf(ral) {
+  var ateco  = gs('fAteco','Informatica / IT');
+  var coeff  = ATECO[ateco] || 0.78;
+  var aliq   = parseFloat(gs('fAliq','0.15'));
+  var cassa  = gs('fCassa','gestSep');
+  var cassaR = cassa==='gestSep' ? 0.2607 : cassa==='artigiani' ? 0.24 : gv('fCassaPerc',14.5)/100;
+
+  var reddForf = ral * coeff;
+  var contrib  = reddForf * cassaR;
+  var impSost  = Math.max(0, reddForf - contrib) * aliq;
+  var totUscite= contrib + impSost;
+  var netto    = ral - totUscite;
+
+  return {
+    tipo: 'P.IVA Forfettario', ral: ral, netto: netto, mensil: 12,
+    nettoMensile: netto/12, totTrat: totUscite, buoniNetto: 0,
+    rows: [
+      {n:'Fatturato annuo', dot:'#8890a8', v:ral, cls:'c-neu'},
+      {n:'Reddito imponibile (coeff. '+(coeff*100).toFixed(0)+'%)', note:ateco, dot:'#454c60', v:reddForf, cls:'c-neu'},
+      {n:'Contributi previdenziali ('+(cassaR*100).toFixed(2)+'%)', dot:'#ffb547', v:-contrib, p:pct(contrib,ral), cls:'c-neg'},
+      {n:'Imposta sostitutiva ('+(aliq*100).toFixed(0)+'%)', note:'Su imponibile al netto contributi', dot:'#ff5757', v:-impSost, p:pct(impSost,ral), cls:'c-neg'},
+      {n:'Totale uscite fiscali', dot:'#ff5757', v:-totUscite, p:pct(totUscite,ral), cls:'c-neg', sub:true},
+    ],
+    bar: [
+      {w:netto/ral*100,    color:'#b8ff57', label:'Netto'},
+      {w:impSost/ral*100,  color:'#ff5757', label:'Imp.sost.'},
+      {w:contrib/ral*100,  color:'#8890a8', label:'Contributi'},
+    ]
+  };
+}
+
+function calcOrd(ral) {
+  var costi  = gv('fCosti', 0);
+  var cassa  = gs('fCassaOrd','gestSep');
+  var cassaR = cassa==='gestSep' ? 0.2607 : cassa==='artigiani' ? 0.24 : gv('fCassaOrdPerc',14.5)/100;
+  var comune  = gs('fComune','Milano');
+  var regione = gs('fRegione','Lombardia');
+  var addRegR = REGIONI[regione] || 0.0173;
+  var addComR = COMUNI[comune] || 0.008;
+  var ben = readBenefits(ral);
+
+  var reddN   = Math.max(0, ral - costi);
+  var contrib = reddN * cassaR;
+  var imp     = Math.max(0, reddN - contrib - ben.previdAnn);
+  var irpef   = irpefLorda(imp);
+  var dld     = detrLD(imp, false);
+  var dagg    = detrAgg(imp);
+  var dconj   = ben.hasConiuge ? detrConiuge(imp) : 0;
+  var dfig    = ben.figliO21 * 950;
+  var totDetr = dld + dagg + dconj + dfig + ben.detrMutuo + ben.detrAffitto;
+  var irpefN  = Math.max(0, irpef.t - totDetr);
+  var addReg  = imp * addRegR;
+  var addCom  = imp * addComR;
+  var totTrat = contrib + irpefN + addReg + addCom;
+  var netto   = reddN - totTrat;
+
+  var rows = [
+    {n:'Ricavi annui (IVA esclusa)', dot:'#8890a8', v:ral, cls:'c-neu'},
+    {n:'Costi deducibili', dot:'#454c60', v:-costi, cls:'c-neg'},
+    {n:'Reddito netto', dot:'#454c60', v:reddN, cls:'c-neu'},
+    {n:'Contributi ('+(cassaR*100).toFixed(2)+'%)', note:'Deducibili da IRPEF', dot:'#ffb547', v:-contrib, p:pct(contrib,ral), cls:'c-neg'},
+    {n:'Imponibile IRPEF', dot:'#454c60', v:imp, cls:'c-neu'},
+    {n:'IRPEF lorda', note:irpef.note, dot:'#ff5757', v:-irpef.t, cls:'c-neg'},
+    {n:'Detrazione lav. autonomo', note:'art. 13 TUIR', dot:'#b8ff57', v:dld, cls:'c-pos'},
+  ];
+  if(dagg>0)  rows.push({n:'Det. aggiuntiva cuneo 2026', dot:'#b8ff57', v:dagg, cls:'c-pos'});
+  if(dconj>0) rows.push({n:'Det. coniuge a carico', dot:'#b8ff57', v:dconj, cls:'c-pos'});
+  if(dfig>0)  rows.push({n:'Det. figli over 21 (×'+ben.figliO21+')', dot:'#b8ff57', v:dfig, cls:'c-pos'});
+  if(ben.detrMutuo>0) rows.push({n:'Det. mutuo prima casa', dot:'#b8ff57', v:ben.detrMutuo, cls:'c-pos'});
+  rows.push(
+    {n:'IRPEF netta', dot:'#ff5757', v:-irpefN, p:pct(irpefN,ral), cls:'c-neg'},
+    {n:'Add. regionale ('+(addRegR*100).toFixed(2)+'%)', dot:'#57a8ff', v:-addReg, cls:'c-neg'},
+    {n:'Add. comunale ('+(addComR*100).toFixed(2)+'%)', dot:'#57a8ff', v:-addCom, cls:'c-neg'},
+    {n:'Totale uscite', dot:'#ff5757', v:-totTrat, p:pct(totTrat,ral), cls:'c-neg', sub:true}
+  );
+
+  return {
+    tipo:'P.IVA Ordinario', ral:ral, netto:netto, mensil:12,
+    nettoMensile:netto/12, totTrat:totTrat, buoniNetto:0,
+    rows:rows,
+    bar:[
+      {w:netto/ral*100,   color:'#b8ff57', label:'Netto'},
+      {w:irpefN/ral*100,  color:'#ff5757', label:'IRPEF'},
+      {w:contrib/ral*100, color:'#8890a8', label:'Contributi'},
+      {w:(addReg+addCom)/ral*100, color:'#57a8ff', label:'Addiz.'},
+    ]
+  };
+}
+
+// ── RENDER RESULT ──────────────────────────────────────────────────
+function renderResult(r) {
+  var barHtml = '';
+  r.bar.forEach(function(s){
+    if(s.w > 0.5) barHtml += '<div class="bs" style="width:'+s.w.toFixed(1)+'%;background:'+s.color+'"></div>';
+  });
+  var legendHtml = '';
+  r.bar.forEach(function(s){
+    legendHtml += '<div class="bl-item"><div class="bl-dot" style="background:'+s.color+'"></div>'+s.label+' '+s.w.toFixed(0)+'%</div>';
+  });
+
+  var rowsHtml = '';
+  r.rows.forEach(function(row){
+    var valStr = row.v < 0 && row.cls==='c-neg' ? '−'+fmt(Math.abs(row.v))
+               : row.v > 0 && row.cls==='c-pos' ? '+'+fmt(row.v)
+               : fmt(Math.abs(row.v));
+    rowsHtml +=
+      '<div class="bk-row'+(row.sub?' sub':'')+' '+(row.cls||'c-neu')+'">' +
+        '<div class="bk-left">' +
+          '<div class="bk-dot" style="background:'+row.dot+'"></div>' +
+          '<div><div class="bk-name">'+row.n+'</div>'+(row.note?'<div class="bk-note">'+row.note+'</div>':'')+'</div>' +
+        '</div>' +
+        '<div class="bk-right"><span class="bk-val">'+valStr+'</span>'+(row.p?'<span class="bk-pct">'+row.p+' del lordo</span>':'')+'</div>' +
+      '</div>';
+  });
+
+  var costoHtml = '';
+  if(r.costoAzienda) {
+    costoHtml =
+      '<div class="cost-card">' +
+        '<div class="cost-title">👔 Quanto costi all\'azienda</div>' +
+        '<div class="cost-row"><span>RAL contrattuale</span><span>'+fmt(r.ral)+'</span></div>' +
+        '<div class="cost-row"><span>Contributi datoriali (~30,6%)</span><span>'+fmt(r.costoAzienda-r.ral)+'</span></div>' +
+        '<div class="cost-row hl"><span>Costo totale azienda</span><span>'+fmt(r.costoAzienda)+'</span></div>' +
+        '<div class="cost-row" style="margin-top:8px;font-size:11px;color:var(--dim)"><span>TFR accantonato/anno</span><span>~'+fmt(r.tfr)+'</span></div>' +
+      '</div>';
+  }
+
+  var buoniHtml = '';
+  if(r.buoniNetto > 0) {
+    buoniHtml =
+      '<div class="rg-card" style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:center">' +
+        '<div><div class="rg-lbl">Buoni pasto (netto esente)</div><div style="font-size:11px;color:var(--dim)">Non inclusi nel netto sopra</div></div>' +
+        '<div class="rg-val" style="color:var(--lime)">+'+fmt(r.buoniNetto)+'</div>' +
+      '</div>';
+  }
+
+  el('resultContent').innerHTML =
+    '<div class="result-hero">' +
+      '<div class="rh-label">'+r.tipo+' · netto annuale stimato</div>' +
+      '<div class="rh-amount">'+fmt(r.netto)+'</div>' +
+      '<div class="rh-sub">'+pct(r.netto,r.ral)+' della RAL · '+fmt(r.totTrat)+' di trattenute</div>' +
+    '</div>' +
+
+    '<div class="result-grid">' +
+      '<div class="rg-card"><div class="rg-lbl">Netto mensile</div><div class="rg-val">'+fmt(r.nettoMensile)+'</div><div class="rg-sub">su '+r.mensil+' mensilità</div></div>' +
+      '<div class="rg-card"><div class="rg-lbl">RAL / Fatturato</div><div class="rg-val">'+fmt(r.ral)+'</div><div class="rg-sub">lordo contrattuale</div></div>' +
+      buoniHtml +
+    '</div>' +
+
+    '<div class="bar-card">' +
+      '<div class="bar-title">Composizione del lordo</div>' +
+      '<div class="bar-track">'+barHtml+'</div>' +
+      '<div class="bar-legend">'+legendHtml+'</div>' +
+    '</div>' +
+
+    costoHtml +
+
+    '<div class="bk-card">' +
+      '<div class="bk-head">Dettaglio voce per voce</div>' +
+      rowsHtml +
+      '<div class="bk-row final">' +
+        '<div class="bk-left"><div class="bk-name" style="font-weight:700">NETTO ANNUALE</div></div>' +
+        '<div class="bk-right"><span class="bk-val">'+fmt(r.netto)+'</span></div>' +
+      '</div>' +
+    '</div>' +
+
+    '<div class="notes">' +
+      '<strong>Note</strong> — prototipo illustrativo, non sostituisce consulenza fiscale.' +
+      '<ul>' +
+        '<li>IRPEF 2026: 23% (≤€28k) · 33% (€28k–€50k) · 43% (>€50k)</li>' +
+        '<li>INPS: 9,19% privato · 8,80% pubblico · Gestione Sep. 26,07%</li>' +
+        '<li>Addizionali: aliquote regionali e comunali 2026</li>' +
+        '<li>Figli under 21: Assegno Unico INPS (non è detrazione IRPEF)</li>' +
+        '<li>TFR, welfare aziendale e oneri sanitari non inclusi</li>' +
+      '</ul>' +
+    '</div>';
+}
+
+// Enter key
+document.addEventListener('keydown', function(e){
+  if(e.key==='Enter' && el('panelForm').classList.contains('active')) calcola();
+});
+</script>
+</body>
+</html>
